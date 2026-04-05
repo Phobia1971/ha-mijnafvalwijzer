@@ -3,8 +3,9 @@
     "step": {
       "user": {
         "title": "Mijn Afvalwijzer",
-        "description": "Voer je postcode en huisnummer in.",
+        "description": "Selecteer je afvalinzamelaar en voer je adresgegevens in.",
         "data": {
+          "provider": "Afvalinzamelaar",
           "postcode": "Postcode",
           "house_number": "Huisnummer"
         }
@@ -12,7 +13,8 @@
     },
     "error": {
       "invalid_postcode": "Ongeldige postcode. Gebruik het formaat 1234AB.",
-      "invalid_house_number": "Ongeldig huisnummer."
+      "invalid_house_number": "Ongeldig huisnummer.",
+      "invalid_provider": "Ongeldige afvalinzamelaar."
     },
     "abort": {
       "already_configured": "Dit adres is al geconfigureerd."

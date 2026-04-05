@@ -9,7 +9,7 @@ from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant
 from homeassistant.const import Platform
 
-from .const import CONF_HOUSE_NUMBER, CONF_POSTCODE, DOMAIN
+from .const import CONF_HOUSE_NUMBER, CONF_POSTCODE, CONF_PROVIDER, DOMAIN
 from .coordinator import MijnAfvalwijzerCoordinator
 
 PLATFORMS = [Platform.SENSOR]
@@ -29,6 +29,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     """Set up Mijn Afvalwijzer from a config entry."""
     coordinator = MijnAfvalwijzerCoordinator(
         hass,
+        provider_key=entry.data.get(CONF_PROVIDER, "mijnafvalwijzer"),
         postcode=entry.data[CONF_POSTCODE],
         house_number=entry.data[CONF_HOUSE_NUMBER],
     )

@@ -3,8 +3,9 @@
     "step": {
       "user": {
         "title": "Mijn Afvalwijzer",
-        "description": "Enter your postcode and house number.",
+        "description": "Select your waste collector and enter your address.",
         "data": {
+          "provider": "Waste collector",
           "postcode": "Postcode",
           "house_number": "House number"
         }
@@ -12,7 +13,8 @@
     },
     "error": {
       "invalid_postcode": "Invalid postcode. Use the format 1234AB.",
-      "invalid_house_number": "Invalid house number."
+      "invalid_house_number": "Invalid house number.",
+      "invalid_provider": "Invalid waste collector."
     },
     "abort": {
       "already_configured": "This address is already configured."
