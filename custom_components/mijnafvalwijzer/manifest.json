@@ -1,0 +1,10 @@
+{
+  "domain": "mijnafvalwijzer",
+  "name": "Mijn Afvalwijzer",
+  "codeowners": [],
+  "config_flow": true,
+  "documentation": "https://www.mijnafvalwijzer.nl",
+  "iot_class": "cloud_polling",
+  "requirements": ["beautifulsoup4>=4.12.0"],
+  "version": "1.0.0"
+}

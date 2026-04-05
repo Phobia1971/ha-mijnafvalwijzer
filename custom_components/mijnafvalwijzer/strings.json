@@ -1,0 +1,21 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Mijn Afvalwijzer",
+        "description": "Voer je postcode en huisnummer in.",
+        "data": {
+          "postcode": "Postcode",
+          "house_number": "Huisnummer"
+        }
+      }
+    },
+    "error": {
+      "invalid_postcode": "Ongeldige postcode. Gebruik het formaat 1234AB.",
+      "invalid_house_number": "Ongeldig huisnummer."
+    },
+    "abort": {
+      "already_configured": "Dit adres is al geconfigureerd."
+    }
+  }
+}

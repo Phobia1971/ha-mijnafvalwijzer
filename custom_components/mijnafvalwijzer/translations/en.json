@@ -1,0 +1,21 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Mijn Afvalwijzer",
+        "description": "Enter your postcode and house number.",
+        "data": {
+          "postcode": "Postcode",
+          "house_number": "House number"
+        }
+      }
+    },
+    "error": {
+      "invalid_postcode": "Invalid postcode. Use the format 1234AB.",
+      "invalid_house_number": "Invalid house number."
+    },
+    "abort": {
+      "already_configured": "This address is already configured."
+    }
+  }
+}
